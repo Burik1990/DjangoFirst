@@ -1,0 +1,34 @@
+[
+  {
+  "model": "catalog.category",
+  "pk": 1,
+  "fields": {
+    "name": "Гаджеты",
+    "description": "портативные устройства"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 2,
+  "fields": {
+    "name": "Фрукты",
+    "description": "полезно"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 3,
+  "fields": {
+    "name": "Мебель",
+    "description": "удобства"
+  }
+},
+{
+  "model": "catalog.category",
+  "pk": 4,
+  "fields": {
+    "name": "Бытовая техника",
+    "description": "холодильники, стиралки и т.п."
+  }
+}
+]
