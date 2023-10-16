@@ -16,12 +16,13 @@ def contacts(request):
 
 
 def home(request):
-    category_list = Category.objects.all()
+    product_list = Product.objects.all()
     context = {
-        'object_list': category_list,
-        'title': 'Категория товара'
+        'object_list': product_list,
+        'title': 'Продукты'
     }
     return render(request, 'catalog/home.html', context)
+
 
 
 def product(request):
@@ -31,3 +32,10 @@ def product(request):
         'title': 'Продукты'
     }
     return render(request, 'catalog/product.html', context)
+
+
+def product_item(request, pk):
+    context = {
+        'object': Product.objects.get(pk=pk)
+    }
+    return render(request, 'catalog/product_item.html', context)
