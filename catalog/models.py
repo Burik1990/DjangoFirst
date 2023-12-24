@@ -1,6 +1,5 @@
 from django.db import models
 
-
 NULLABLE = {'blank': True, 'null': True}
 
 
@@ -8,7 +7,7 @@ class Product(models.Model):
     name = models.CharField(max_length=100, verbose_name='наименование')
     description = models.TextField(verbose_name='описание')
     preview = models.ImageField(upload_to='product/', verbose_name='превью', **NULLABLE)
-    category =models.ForeignKey('catalog.Category', on_delete=models.PROTECT ,verbose_name='категория', **NULLABLE)
+    category = models.ForeignKey('catalog.Category', on_delete=models.PROTECT, verbose_name='категория', **NULLABLE)
     price = models.PositiveIntegerField(verbose_name='цена')
     date_of_creation = models.DateTimeField(auto_now_add=True, verbose_name='дата создания', **NULLABLE)
     last_modified_date = models.DateTimeField(auto_now_add=True, verbose_name='последнее изменение', **NULLABLE)
@@ -19,7 +18,6 @@ class Product(models.Model):
     class Meta:
         verbose_name = 'продукт'
         verbose_name_plural = 'продукты'
-
 
 
 class Category(models.Model):
