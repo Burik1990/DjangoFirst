@@ -3,7 +3,7 @@
 {% block content %}
     <div class="col-12 mb-5">
         <a class="btn btn-outline-primary" href="{% url 'blog:create' %}">Создать статью</a>
-       <a class="btn btn-outline-primary" href="{% url 'blog:blog_all_list' %}">Все статьи</a> <!-- #переход на нефильтрованную страницу-->
+       <a class="btn btn-outline-primary" href="{% url 'blog:blog_list' %}">Опубликованные</a> <!-- #переход на нефильтрованную страницу-->
     </div>
     {% for object in object_list %}
         <div class="col-4 mb-4">
