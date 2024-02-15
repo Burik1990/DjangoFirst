@@ -1,93 +1,178 @@
 [
-{
-  "model": "catalog.product",
-  "pk": 1,
-  "fields": {
-    "name": "Холодильник",
-    "description": "ATLANT  4208-000 -",
-    "preview": "product/atlant_4208000.jpeg",
-    "category": 4,
-    "price": 867,
-    "date_of_creation": "2023-10-07T11:54:05.273Z",
-    "last_modified_date": "2023-10-07T11:54:05.273Z"
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Холодильник",
+      "description": "ATLANT  4208-000 -",
+      "preview": "product/atlant_4208000.jpeg",
+      "category": 4,
+      "price": 867,
+      "date_of_creation": "2023-10-07T11:54:05.273Z",
+      "last_modified_date": "2023-10-07T11:54:05.273Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Стиральная машина",
+      "description": "Стиральная машина LG F2J3NS0W \r\nОтличная стиралка",
+      "preview": "product/lg.jpeg",
+      "category": 4,
+      "price": 1280,
+      "date_of_creation": "2023-10-07T12:02:36.636Z",
+      "last_modified_date": "2023-10-07T12:02:36.636Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Апельсин",
+      "description": "полезный",
+      "preview": "product/Orange.jpg",
+      "category": 2,
+      "price": 5,
+      "date_of_creation": "2023-10-07T12:07:21.002Z",
+      "last_modified_date": "2023-10-07T12:07:21.002Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Банан",
+      "description": "вкусный",
+      "preview": "",
+      "category": 2,
+      "price": 5,
+      "date_of_creation": "2023-10-07T12:07:57.802Z",
+      "last_modified_date": "2023-10-07T12:07:57.802Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "Умные часы",
+      "description": "Умные часы Haylou LS02 (Черный)",
+      "preview": "product/ls02_haylou.jpeg",
+      "category": 1,
+      "price": 79,
+      "date_of_creation": "2023-10-07T12:10:37.017Z",
+      "last_modified_date": "2023-10-07T12:10:37.017Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "Беспроводные наушники",
+      "description": "Беспроводные наушники Xiaomi Redmi Buds 4 Lite",
+      "preview": "",
+      "category": 1,
+      "price": 89,
+      "date_of_creation": "2023-10-07T12:12:13.094Z",
+      "last_modified_date": "2023-10-07T12:12:13.095Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name": "Диван",
+      "description": "Диван угловой Woodcraft Атланта-М ",
+      "preview": "product/1_woodcraft_015_60101d83ed926.jpeg",
+      "category": 3,
+      "price": 1301,
+      "date_of_creation": "2023-10-07T12:15:54.909Z",
+      "last_modified_date": "2023-10-07T12:15:54.909Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "name": "MacBook Pro 13",
+      "description": "Компактный и мощный",
+      "preview": "product/makbookPro.webp",
+      "category": 1,
+      "price": 4500,
+      "date_of_creation": "2024-02-10T19:37:48.855Z",
+      "last_modified_date": "2024-02-10T19:37:48.855Z"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "Гаджеты",
+      "description": "портативные устройства"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Фрукты",
+      "description": "полезно"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Мебель",
+      "description": "удобства"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Бытовая техника",
+      "description": "холодильники, стиралки и т.п."
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 3,
+    "fields": {
+      "product": 2,
+      "number": 1,
+      "name": "Базовая",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 4,
+    "fields": {
+      "product": 1,
+      "number": 1,
+      "name": "Базовая",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 5,
+    "fields": {
+      "product": 3,
+      "number": 1,
+      "name": "Базовая",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.version",
+    "pk": 6,
+    "fields": {
+      "product": 2,
+      "number": 2,
+      "name": "Расширенная",
+      "is_active": true
+    }
   }
-},
-{
-  "model": "catalog.product",
-  "pk": 2,
-  "fields": {
-    "name": "Стиральная машина",
-    "description": "Стиральная машина LG F2J3NS0W \r\nОтличная стиралка",
-    "preview": "product/lg.jpeg",
-    "category": 4,
-    "price": 1280,
-    "date_of_creation": "2023-10-07T12:02:36.636Z",
-    "last_modified_date": "2023-10-07T12:02:36.636Z"
-  }
-},
-{
-  "model": "catalog.product",
-  "pk": 3,
-  "fields": {
-    "name": "Апельсин",
-    "description": "полезный",
-    "preview": "product/Orange.jpg",
-    "category": 2,
-    "price": 5,
-    "date_of_creation": "2023-10-07T12:07:21.002Z",
-    "last_modified_date": "2023-10-07T12:07:21.002Z"
-  }
-},
-{
-  "model": "catalog.product",
-  "pk": 4,
-  "fields": {
-    "name": "Банан",
-    "description": "вкусный",
-    "preview": "",
-    "category": 2,
-    "price": 5,
-    "date_of_creation": "2023-10-07T12:07:57.802Z",
-    "last_modified_date": "2023-10-07T12:07:57.802Z"
-  }
-},
-{
-  "model": "catalog.product",
-  "pk": 5,
-  "fields": {
-    "name": "Умные часы",
-    "description": "Умные часы Haylou LS02 (Черный)",
-    "preview": "product/ls02_haylou.jpeg",
-    "category": 1,
-    "price": 79,
-    "date_of_creation": "2023-10-07T12:10:37.017Z",
-    "last_modified_date": "2023-10-07T12:10:37.017Z"
-  }
-},
-{
-  "model": "catalog.product",
-  "pk": 6,
-  "fields": {
-    "name": "Беспроводные наушники",
-    "description": "Беспроводные наушники Xiaomi Redmi Buds 4 Lite",
-    "preview": "",
-    "category": 1,
-    "price": 89,
-    "date_of_creation": "2023-10-07T12:12:13.094Z",
-    "last_modified_date": "2023-10-07T12:12:13.095Z"
-  }
-},
-{
-  "model": "catalog.product",
-  "pk": 7,
-  "fields": {
-    "name": "Диван",
-    "description": "Диван угловой Woodcraft Атланта-М ",
-    "preview": "product/1_woodcraft_015_60101d83ed926.jpeg",
-    "category": 3,
-    "price": 1301,
-    "date_of_creation": "2023-10-07T12:15:54.909Z",
-    "last_modified_date": "2023-10-07T12:15:54.909Z"
-  }
-}
 ]
